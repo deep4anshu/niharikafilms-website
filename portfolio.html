@@ -4,35 +4,53 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio | Niharika Films Pvt. Ltd.</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
   <link rel="stylesheet" href="assets/css/style.css">
+
+  <!-- AOS Library CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
+
 <body>
 
-  <header>
-    <h1>Niharika Films Pvt. Ltd.</h1>
+  <!-- Header -->
+  <header class="glass-header">
+    <a href="index.html" class="logo">
+      <img src="assets/images/logo.jpg" alt="Niharika Films Logo">
+    </a>
     <nav>
-      <a href="index.html">Home</a>
-      <a href="portfolio.html">Portfolio</a>
-      <a href="booking.html">Booking</a>
-      <a href="contact.html">Contact</a>
-      <a href="clients.html">Client Access</a>
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="portfolio.html" class="nav-link active">Portfolio</a>
+      <a href="booking.html" class="nav-link">Booking</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+      <a href="clients.html" class="nav-link">Client Access</a>
     </nav>
   </header>
 
-  <section class="portfolio">
+  <!-- Portfolio Section -->
+  <section class="portfolio-page" data-aos="fade-up">
     <h2>Wedding Highlights</h2>
+    <p class="portfolio-subtitle">A Glimpse of Timeless Memories Captured with Love</p>
+
     <div class="gallery">
-      <img src="assets/images/portfolio/wedding1.jpg" alt="Wedding 1" data-tilt data-tilt-scale="1.1">
-      <img src="assets/images/portfolio/wedding2.jpg" alt="Wedding 2" data-tilt data-tilt-scale="1.1">
-      <img src="assets/images/portfolio/wedding3.jpg" alt="Wedding 3" data-tilt data-tilt-scale="1.1">
-      <img src="assets/images/portfolio/wedding4.jpg" alt="Wedding 4" data-tilt data-tilt-scale="1.1">
-      <img src="assets/images/portfolio/wedding5.jpg" alt="Wedding 5" data-tilt data-tilt-scale="1.1">
-      <img src="assets/images/portfolio/wedding6.jpg" alt="Wedding 6" data-tilt data-tilt-scale="1.1">
-      <img src="assets/images/portfolio/wedding7.jpg" alt="Wedding 7" data-tilt data-tilt-scale="1.1">
-      <img src="assets/images/portfolio/wedding8.jpg" alt="Wedding 8" data-tilt data-tilt-scale="1.1">
-      <img src="assets/images/portfolio/wedding9.jpg" alt="Wedding 9" data-tilt data-tilt-scale="1.1">
-      <img src="assets/images/portfolio/wedding10.jpg" alt="Wedding 10" data-tilt data-tilt-scale="1.1">
-      <img src="assets/images/portfolio/wedding11.jpg" alt="Wedding 11" data-tilt data-tilt-scale="1.1">
+      <img src="assets/images/portfolio/wedding1.jpg" alt="Wedding 1" data-tilt data-tilt-scale="1.05">
+      <img src="assets/images/portfolio/wedding2.jpg" alt="Wedding 2" data-tilt data-tilt-scale="1.05">
+      <img src="assets/images/portfolio/wedding3.jpg" alt="Wedding 3" data-tilt data-tilt-scale="1.05">
+      <img src="assets/images/portfolio/wedding4.jpg" alt="Wedding 4" data-tilt data-tilt-scale="1.05">
+      <img src="assets/images/portfolio/wedding5.jpg" alt="Wedding 5" data-tilt data-tilt-scale="1.05">
+      <img src="assets/images/portfolio/wedding6.jpg" alt="Wedding 6" data-tilt data-tilt-scale="1.05">
+      <img src="assets/images/portfolio/wedding7.jpg" alt="Wedding 7" data-tilt data-tilt-scale="1.05">
+      <img src="assets/images/portfolio/wedding8.jpg" alt="Wedding 8" data-tilt data-tilt-scale="1.05">
+      <img src="assets/images/portfolio/wedding9.jpg" alt="Wedding 9" data-tilt data-tilt-scale="1.05">
+      <img src="assets/images/portfolio/wedding10.jpg" alt="Wedding 10" data-tilt data-tilt-scale="1.05">
+      <img src="assets/images/portfolio/wedding11.jpg" alt="Wedding 11" data-tilt data-tilt-scale="1.05">
     </div>
   </section>
 
@@ -43,5 +61,13 @@
   <!-- JavaScript Files -->
   <script src="assets/js/script.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
+  </script>
+
 </body>
 </html>

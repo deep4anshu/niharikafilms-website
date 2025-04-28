@@ -70,3 +70,22 @@ counters.forEach(counter => {
         }
     });
 });
+
+if (window.innerWidth > 768) { 
+    VanillaTilt.init(document.querySelectorAll("[data-tilt]"), {
+        max: 8,
+        speed: 800,
+        scale: 1.02,
+        glare: true,
+        "max-glare": 0.1
+    });
+}
+
+// VanillaTilt Initialization with Professional Settings
+VanillaTilt.init(document.querySelectorAll("[data-tilt]"), {
+    max: 8,          // reduced max tilt angle (default was 15-25, too much)
+    speed: 800,      // slower speed
+    scale: 1.02,     // slight zoom (not too big)
+    glare: true,     // subtle light glare
+    "max-glare": 0.1 // very soft glare (0.1 means 10%)
+});

@@ -5,38 +5,89 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Booking | Niharika Films Pvt. Ltd.</title>
   <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
-  <header>
-    <h1>Niharika Films Pvt. Ltd.</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="portfolio.html">Portfolio</a>
-      <a href="booking.html">Booking</a>
-      <a href="contact.html">Contact</a>
-      <a href="clients.html">Client Access</a>
-    </nav>
-  </header>
+<header class="glass-header">
+  <a href="index.html" class="logo">
+    <img src="assets/images/logo.jpg" alt="Niharika Films Logo">
+  </a>
+  <nav>
+    <a href="index.html" class="nav-link">Home</a>
+    <a href="portfolio.html" class="nav-link">Portfolio</a>
+    <a href="booking.html" class="nav-link active">Booking</a>
+    <a href="contact.html" class="nav-link">Contact</a>
+    <a href="clients.html" class="nav-link">Client Access</a>
+  </nav>
+</header>
 
-  <section class="booking-form">
-    <h2>Book a Shoot</h2>
-    <form action="https://formspree.io/f/xwkjayzb" method="POST">
-      <input type="text" name="name" placeholder="Your Full Name" required>
-      <input type="email" name="email" placeholder="Email Address" required>
-      <input type="text" name="phone" placeholder="Phone Number" required>
-      <input type="text" name="event_date" placeholder="Event Date" required>
-      <textarea name="message" rows="4" placeholder="Message"></textarea>
-      <button type="submit">Send Inquiry</button>
-    </form>
-  </section>
+<section class="booking-section">
+  <div class="booking-wrapper">
 
-  <footer>
-    <p>&copy; 2025 Niharika Films Pvt. Ltd. All rights reserved.</p>
-  </footer>
+    <!-- Left: Form Card -->
+    <div class="form-card">
+      <h2>Book a Consultation</h2>
+      <form action="https://formspree.io/f/xwkjayzb" method="POST">
+        <div class="form-row">
+          <input type="text" name="name" placeholder="Full Name *" required>
+          <input type="email" name="email" placeholder="Email Address *" required>
+        </div>
+        <div class="form-row">
+          <input type="text" name="phone" placeholder="Phone Number *" required>
+          <input type="text" name="event_date" placeholder="Event Date" onfocus="(this.type='date')">
+        </div>
+        <input type="text" name="location" placeholder="Event Location">
+        <select name="service">
+          <option value="">Service Interested In *</option>
+          <option value="Photography">Photography</option>
+          <option value="Videography">Videography</option>
+          <option value="Both">Photography & Videography</option>
+        </select>
+        <textarea name="message" rows="4" placeholder="Tell us about your event..."></textarea>
+        <button type="submit" class="cta-button">Send Inquiry</button>
+        <a href="https://wa.me/9779827521337" target="_blank" class="whatsapp-button">
+          <i class="fab fa-whatsapp"></i> Message Us on WhatsApp
+        </a>
+      </form>
+    </div>
 
-  <!-- JavaScript Files -->
-  <script src="assets/js/script.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+    <!-- Right: Contact Card -->
+    <div class="contact-card">
+      <h2>Contact Information</h2>
+      <p><i class="fas fa-envelope"></i> shresthaniharika103@gmail.com</p>
+      <p><i class="fas fa-phone"></i> +977-9847035434</p>
+      <p><i class="fas fa-map-marker-alt"></i> Butwal, Nepal</p>
+      <p><i class="fas fa-clock"></i> Office Hours: <br>Mon-Sat: 9 AM - 6 PM</p>
+
+      <h3>Follow Us</h3>
+      <div class="social-icons">
+        <a href="https://www.facebook.com/nf0408" target="_blank" class="facebook">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+      
+        <a href="https://www.instagram.com/niharika.films/" target="_blank" class="instagram">
+          <i class="fab fa-instagram"></i>
+        </a>
+      
+        <a href="https://www.youtube.com/@niharikafilms" target="_blank" class="youtube">
+          <i class="fab fa-youtube"></i>
+        </a>
+      
+        <a href="https://www.youtube.com/@NiharikaWedFilms" target="_blank" class="youtube">
+          <i class="fab fa-youtube"></i>
+        </a>
+      </div>
+      
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2025 Niharika Films Pvt. Ltd. All rights reserved.</p>
+</footer>
+
+<script src="assets/js/script.js"></script>
 </body>
 </html>
