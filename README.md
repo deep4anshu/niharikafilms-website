@@ -72,16 +72,15 @@ git clone https://github.com/deep4anshu/niharikafilms-website.git
 
 ## 📧 Contact
 
-- **Email**: niharika.films@gmail.com
-- **Phone**: +977-98XXXXXXXX
-- **Facebook**: [Niharika Films - Wedding Moments](https://facebook.com/NiharikaFilms)
+- **Email**: shretshaniharika103@gmail.com
+- **Phone**: +977-9847035434
+- **Facebook**: [Niharika Films - Wedding Moments](https://facebook.com/nf0408)
 
 ---
 
 ## 🧡 Credits
 
-Developed and Designed by **Pawan Ghimire**  
-Founder, Niharika Films Pvt. Ltd.
+Developed and Designed by **Deepanshu Shrestha**  
 
 ---
 
