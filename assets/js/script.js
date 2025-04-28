@@ -45,3 +45,28 @@ setInterval(() => {
         }, 500); // after animation ends
     }
 }, 3000);
+
+// Counter Animation
+const counters = document.querySelectorAll('.counter');
+
+counters.forEach(counter => {
+    const updateCount = () => {
+        const target = +counter.getAttribute('data-target');
+        const count = +counter.innerText;
+        const speed = 50; // smaller = faster
+        
+        if (count < target) {
+            counter.innerText = Math.ceil(count + 1);
+            setTimeout(updateCount, speed);
+        } else {
+            counter.innerText = target;
+        }
+    };
+
+    window.addEventListener('scroll', function() {
+        const rect = counter.getBoundingClientRect();
+        if (rect.top < window.innerHeight) {
+            updateCount();
+        }
+    });
+});
